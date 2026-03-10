@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: #f6f6f7;
+  color: #1f2937;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+.blog-header {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 74px;
+  gap: 18px;
+}
+
+.brand {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.search-box input {
+  width: 170px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  border-radius: 6px;
+  height: 34px;
+  padding: 0 10px;
+}
+
+.page-title-block {
+  text-align: center;
+  margin: 52px 0 26px;
+}
+
+.page-title-block h1 {
+  margin: 0;
+  font-size: 44px;
+}
+
+.page-title-block p {
+  margin: 10px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.hero-post {
+  border-radius: 14px;
+  overflow: hidden;
+  min-height: 420px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(8, 10, 24, 0.8), rgba(8, 10, 24, 0.2));
+}
+
+.hero-content {
+  position: absolute;
+  left: 36px;
+  bottom: 32px;
+  max-width: 620px;
+  color: #fff;
+}
+
+.tag {
+  display: inline-block;
+  background: #4f46e5;
+  color: #dbeafe;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+
+.hero-content h2 {
+  font-size: 45px;
+  line-height: 1.12;
+  margin: 0 0 10px;
+}
+
+.hero-content p,
+.card-body p {
+  margin: 0;
+  color: #d1d5db;
+  font-size: 14px;
+  display: flex;
+  gap: 12px;
+}
+
+.posts-grid {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.post-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.post-card img {
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-body h3 {
+  margin: 0 0 14px;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.card-body p {
+  color: #6b7280;
+}
+
+.load-more-row {
+  text-align: center;
+  margin: 28px 0 42px;
+}
+
+.load-more-row button {
+  border: 1px solid #d1d5db;
+  background: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+
+.ads-box {
+  margin: 0 auto 60px;
+  max-width: 750px;
+  height: 100px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #eceef1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #6b7280;
+}
+
+.ads-box p {
+  margin: 6px 0 0;
+  font-size: 28px;
+  color: #374151;
+}
+
+.blog-footer {
+  border-top: 1px solid #e5e7eb;
+  background: #fff;
+  padding-top: 50px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  gap: 40px;
+}
+
+.footer-grid h4 {
+  margin: 0 0 12px;
+}
+
+.footer-grid p,
+.footer-grid li {
+  color: #6b7280;
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.footer-grid ul {
+  margin: 0;
+  padding: 0;
+}
+
+.newsletter {
+  background: #f3f4f6;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.newsletter input,
+.newsletter button {
+  width: 100%;
+  border-radius: 8px;
+  height: 40px;
+  margin-top: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.newsletter button {
+  background: #4f46e5;
+  color: #fff;
+  border: 0;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  padding: 20px 0 30px;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.footer-bottom div {
+  display: flex;
+  gap: 18px;
+}
+
+@media (max-width: 1024px) {
+  .posts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-nav {
+    display: none;
+  }
+
+  .posts-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h2,
+  .page-title-block h1,
+  .card-body h3,
+  .ads-box p {
+    font-size: 30px;
+  }
+}
